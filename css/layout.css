@@ -2,6 +2,7 @@
 html,
 body {
 	min-height: 100%;
+	color: #333;
 }
 body {
 	font-family: 'NanumGothic';
@@ -46,25 +47,23 @@ body {
 	position: fixed;
 	top: 0;
 	background: rgba(255, 255, 255, 0.1);
-	/* for iPhone */
-	-webkit-backdrop-filter: saturate(180%) blur(15px);
-	-moz-backdrop-filter: saturate(180%) blur(15px);
-	-o-backdrop-filter: saturate(180%) blur(15px);
 	backdrop-filter: saturate(180%) blur(15px);
 }
 .global-nav-links,
 .local-nav-links {
 	display: flex;
 	align-items: center;
-	max-width: 1000px;
+	max-width: 1260px;
 	height: 100%;
 	margin: 0 auto;
 }
 .global-nav-links {
 	justify-content: space-between;
 }
-.local-nav-links .product-name {
+.local-nav-links h1 {
 	margin-right: auto;
+}
+.local-nav-links h1 .product-name {
 	font-size: 1.4rem;
 	font-weight: bold;
 	padding-left: 40px;
@@ -72,35 +71,18 @@ body {
 }
 .local-nav-links a {
 	font-size: 0.8rem;
+	color: #333;
+}
+.global-nav-links a {
+	color: #333;
 }
 .local-nav-links a:not(.product-name) {
 	margin-left: 2em;
 }
-.nav {
-	flex: 1;
-}
-.user-menu {
-	display: flex;
-	gap: 20px;
-	justify-content: end;
-}
-.user-menu > li > a {
-	color: #777;
-}
-.menu {
-	display: flex;
-	gap: 120px;
-	justify-content: center;
-	margin-top: 40px;
-}
-.menu > li > a {
-	font-size: 24px;
-}
 /* 메인영역 */
 .main {
 	margin-top: 96px;
-}
-.view {
+	background-color: #eee;
 }
 .content {
 	max-width: 1260px;
