@@ -1,0 +1,21 @@
+/* 컴포넌트 스타일 */
+
+/* 테이블 */
+.table {
+	table-layout: auto;
+	border-collapse: collapse;
+}
+.table th,
+.table td {
+	border: 1px solid #e2e2e2;
+	padding: 12px;
+}
+.table th {
+	background-color: #ccc;
+	font-weight: bold;
+}
+caption {
+	position: relative;
+	text-indent: -9999px;
+	height: 0;
+}
