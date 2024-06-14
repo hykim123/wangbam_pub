@@ -6,14 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>전체 상품 리스트</title>
   <link rel="stylesheet" href="/css/style.css">
+  <style>
+
+  </style>
 </head>
 
 <body>
-  <div class="title">
+  <div class="title1">
     <h3>상품 리스트</h3>
   </div>
-  <div class="search">
-    <input type="text" />
+  <div class="search-bar">
+    <input type="text" placeholder="Search..." />
+    <button class="search-btn">&#128269;</button>
   </div>
   <table class="table">
     <tr>
@@ -39,13 +43,18 @@
   </table>
 </body>
 
-<div class="paging">
-  <h3>
-    < 1 2 3 4 5 6 7 8 9 10 &nbsp;>
-  </h3>
+<div class="pagination">
+  <a href="#">&lt;</a>
+  <a href="#">1</a>
+  <a href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">&gt;</a>
+</div>
 
-  <div>
-    <button type=" button" class=" btn">삭제</button>
-  </div>
+<div>
+  <button type=" button" class="btn">삭제</button>
+</div>
 
 </html>
