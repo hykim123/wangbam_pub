@@ -12,12 +12,13 @@ body {
 .header {
 	position: sticky;
 	top: 0;
-	display: flex;
+	z-index: 3;
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: saturate(180%) blur(15px);
+}
+.header-inner {
 	max-width: 1260px;
-	padding: 16px;
 	margin: auto;
-	background-color: rgba(255, 255, 255, 0.8);
-	backdrop-filter: blur(40px);
 }
 .logo {
 	width: 150px;
@@ -25,29 +26,14 @@ body {
 	background: url(../img/logo.png) no-repeat center/contain;
 }
 .global-nav {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 10;
 	width: 100%;
 	height: 44px;
 	padding: 0 1rem;
 }
 .local-nav {
-	position: absolute;
-	top: 45px;
-	left: 0;
-	z-index: 11;
 	width: 100%;
 	height: 52px;
 	padding: 0 1rem;
-	border-bottom: 1px solid #ddd;
-}
-.local-nav-sticky .local-nav {
-	position: fixed;
-	top: 0;
-	background: rgba(255, 255, 255, 0.1);
-	backdrop-filter: saturate(180%) blur(15px);
 }
 .global-nav-links,
 .local-nav-links {
@@ -83,6 +69,12 @@ body {
 .main {
 	margin-top: 96px;
 	background-color: #eee;
+}
+.main:has(.view) {
+	margin-top: 0;
+}
+.main:has(.login-container) {
+	background-color: #fff;
 }
 .content {
 	max-width: 1260px;
