@@ -64,18 +64,19 @@
 	gap: 20px;
 }
 .hot-left {
-	flex: 0.6;
-}
-.hot-right {
+	flex: 0.7;
 }
 .hot-header {
 	display: flex;
 	gap: 8px;
 	padding: 24px 4px;
-	background-color: #fff;
 }
 .hot-header p:first-child {
 	font-size: 32px;
+	color: #744e33;
+}
+.hot-header + div {
+	background-color: #f5f4f2;
 }
 .hot-header p:nth-child(2) span {
 	font-size: 14px;
@@ -85,4 +86,106 @@
 	text-decoration: underline;
 	text-underline-offset: 6px;
 	font-weight: 700;
+}
+.hot-right {
+	flex: 0.3;
+}
+
+.product-list {
+	width: 80%;
+	margin: auto;
+	padding: 100px 0;
+	overflow: hidden;
+}
+.product-list > h2 {
+	text-align: center;
+}
+.item-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.item {
+	background: #fff;
+	border: 1px solid #ddd;
+	margin: 10px;
+	padding: 10px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	flex-basis: 30%;
+	text-align: center;
+}
+
+.item img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto 10px;
+}
+
+.item p {
+	margin: 5px 0;
+	color: #555;
+}
+
+/* login */
+.login-container {
+	width: 300px;
+	padding: 20px;
+	border-radius: 5px;
+	text-align: center;
+	margin: 0 auto 200px;
+	background: #fff;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container > h1 {
+	margin: 0;
+	font-size: 24px;
+	color: #333;
+}
+
+.login-container > p {
+	margin: 10px 0 20px;
+	color: #666;
+}
+
+.login-container > .login-form input {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+.login-container > .login-form button {
+	width: 100%;
+	padding: 10px;
+	background: #333;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.login-container > .login-form button:hover {
+	background: #555;
+}
+
+.login-container > .login-links {
+	margin-top: 20px;
+}
+
+.login-container > .login-links a {
+	color: #666;
+	font-size: 14px;
+	text-decoration: none;
+	margin: 0 5px;
+}
+
+.login-container > .login-links a:hover {
+	text-decoration: underline;
 }
