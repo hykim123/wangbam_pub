@@ -19,3 +19,12 @@ caption {
 	text-indent: -9999px;
 	height: 0;
 }
+/* 버튼 */
+.btn-icon {
+	width: 24px;
+	height: 24px;
+	padding: 0;
+}
+.btn-icon.plus {
+	background: url(../img/icon_plus.png) no-repeat center/contain;
+}
