@@ -27,9 +27,6 @@ body:has(.docu) {
 	gap: 10px;
 	max-width: 900px;
 	margin: auto;
-	border-radius: 20px;
-	border: 1px solid #e2e2e2;
-	padding: 24px 40px;
 }
 .form-group > h1 {
 	border-left: 4px solid #e2e2e2;
