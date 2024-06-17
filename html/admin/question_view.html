@@ -4,41 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="/css/component.css">
+    <link rel="stylesheet" href="/css/admin.css">
     <title>왕밤빵</title>
 </head>
 
 <body>
-    <header>
-        <h2>문의 상세보기</h2>
-    </header>
 
-    <div id="wrab">
+
+    <div class="admin">
         <form action="" method="post">
-            <table class="table2">
-                <tbody>
-                    <tr>
-                        <th>제목 : </th>
-                        <td><input type="text" name="title" value="문의제목" disabled /></td>
-                    </tr>
-                    <tr>
-                        <th>작성자 : </th>
-                        <td><input type="text" name="writer" value="작성자이름" disabled /></td>
-                    </tr>
-                    <tr>
-                        <th>내용 : </th>
-                        <td><textarea id="content" name="content" disabled>문의내용</textarea></td>
-                    </tr>
-                    <tr>
-                        <th>답변 : </th>
-                        <td><textarea id="content" name="answer"></textarea></td>
-                    </tr>
-                </tbody>
-            </table>
+
+            <div>
+                <label for="title">제목</label>
+                <input type="text" name="title" value="문의제목" disabled />
+            </div>
+            <div>
+                <label for="writer">작성자</label>
+                <input type="text" name="writer" value="작성자이름" disabled />
+            </div>
+            <div>
+                <label for="content">내용</label>
+                <input type="text" name="content" value="문의내용" disabled />
+            </div>
+            <div>
+                <label for="answer">답변</label>
+                <input type="text" name="answer" value="답변내용" />
+            </div>
+
             <div class="btn_div">
-                <button type="button" class="btn" onclick="">취소</button>
-                <button type="button" class="btn" onclick="">저장</button>
+                <button type="button" class="admin-btn cancel" onclick="">취소</button>
+                <button type="button" class="admin-btn submit" onclick="">저장</button>
             </div>
         </form>
     </div>
