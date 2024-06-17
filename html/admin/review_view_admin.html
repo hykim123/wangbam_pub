@@ -5,56 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="/css/component.css">
+    <link rel="stylesheet" href="/css/admin.css">
     <title>왕밤빵</title>
 </head>
 
 <body>
-
-    <div class="view">
+    <div class="admin">
         <form action="" method="post">
             <div>
-                <label>제목</label>
+                <label for="title">제목</label>
                 <input type="text" name="title" value="리뷰제목" disabled />
             </div>
             <div>
-                <label>작성자</label>
+                <label for="writer">작성자 : </label>
                 <input type="text" name="writer" value="작성자이름" disabled />
             </div>
             <div>
-                <label>평점</label>
+                <label for="score">평점</label>
                 <input type="text" name="Score" value="평점" disabled />
             </div>
             <div>
-                <label>내용</label>
-                <input type="text" name="content" value="리뷰내용" disabled />
+                <label for="content">내용</label>
+                <input type="text" name="content" value="문의내용" disabled />
             </div>
 
             <div> <!-- for 돌려서 댓글 목록 가져오기-->
                 이름:글쓴이 &nbsp;&nbsp;
                 날짜:날짜<br />
                 내용:댓글 내용
-                <!-- 본인이 작성한 댓글일 경우에만 삭제버튼 보이게 -->
-                <button type="button" class="btn" onclick="">삭제</button>
+                <button type="button" class="admin-btn cancel" onclick="">삭제</button>
             </div>
 
             <form action="" method="post">
-                이름:<input type="text" name="writer" /><br />
-                내용:<textarea name="comm"></textarea><br />
-                비밀번호:<input type="password" name="password" /><br />
+                이름<input type="text" name="writer" /><br />
+                내용<input type="text" name="comm" /><br />
+                비밀번호<input type="password" name="password" /><br />
 
                 <input type="hidden" name="" value="">
                 <input type="hidden" name="" value="" />
-                <button type="button" class="out-btn" onclick="">목록</button>
+                <button type="button" class="admin-btn submit" onclick="">저장</button>
             </form>
 
             <div class="btn_div">
-                <button type="button" class="out-btn" onclick="">목록</button>
-                <!-- 본인이 작성한 리뷰일 경우에만 삭제버튼 보이게 -->
-                <button type="button" class="out-btn" onclick="">삭제</button>
+                <button type="button" class="admin-btn cancel" onclick="">삭제</button>
+                <button type="button" class="admin-btn submit" onclick="">목록</button>
             </div>
         </form>
-
     </div>
 </body>
 
