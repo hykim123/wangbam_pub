@@ -201,3 +201,583 @@ select {
 	border-radius: 5px;
 	box-sizing: border-box;
 }
+
+.product-page {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+.product-image {
+	flex: 1;
+	text-align: center;
+}
+
+.product-image img {
+	max-width: 100%;
+	height: auto;
+}
+
+.product-image .view-detail {
+	margin-top: 10px;
+	padding: 10px 20px;
+	background-color: #333;
+	color: white;
+	border: none;
+	cursor: pointer;
+	font-size: 16px;
+	border-radius: 5px;
+	transition: background-color 0.3s ease;
+}
+
+.product-image .view-detail:hover {
+	background-color: #555;
+}
+
+.product-details {
+	flex: 1;
+	padding: 0 20px;
+}
+
+.product-details h1 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.product-details .price {
+	color: #e74c3c;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.product-details .origin,
+.product-details .shipping,
+.product-details .shipping-fee {
+	margin-bottom: 10px;
+}
+
+.product-details .quantity {
+	margin-bottom: 10px;
+}
+
+.product-details .quantity label {
+	margin-right: 10px;
+}
+
+.product-details .quantity input {
+	width: 50px;
+	padding: 5px;
+	font-size: 16px;
+}
+
+.product-details .total-price {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+.product-details .total-price span {
+	font-weight: bold;
+}
+
+.product-details .buttons {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 20px;
+}
+
+.product-details .buttons button {
+	flex: 1;
+	padding: 10px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: background-color 0.3s ease;
+}
+
+.product-details .buttons .buy-now {
+	background-color: #333333; /* Changed to a grayscale color */
+	color: white;
+}
+
+.product-details .buttons .buy-now:hover {
+	background-color: #4d4d4d; /* Changed to a darker grayscale color */
+}
+
+.product-details .buttons .add-to-cart,
+.product-details .buttons .gift {
+	background-color: #b3b3b3; /* Slightly darker than #ccc */
+	color: white;
+}
+
+.product-details .buttons .add-to-cart:hover,
+.product-details .buttons .gift:hover {
+	background-color: #c0c0c0; /* Slightly darker than #eee */
+}
+
+.product-details .kakao-pay {
+	margin-top: 20px;
+}
+
+.product-details .kakao-pay .kakao-pay-button {
+	width: 100%;
+	padding: 15px;
+	font-size: 18px;
+	background-color: #f1c40f;
+	color: black;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: background-color 0.3s ease;
+}
+
+.product-details .kakao-pay .kakao-pay-button:hover {
+	background-color: #f39c12;
+}
+
+.product-tabs {
+	margin-top: 40px;
+}
+
+.product-tabs ul {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	border-bottom: 2px solid #ddd;
+}
+
+.product-tabs ul li {
+	margin-right: 20px;
+}
+
+.product-tabs ul li a {
+	display: block;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: #333;
+	border: 1px solid transparent;
+	border-bottom: none;
+	transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.product-tabs ul li.active a,
+.product-tabs ul li a:hover {
+	color: #f1c40f;
+	border-color: #ddd;
+	border-bottom: 2px solid #f1c40f;
+}
+
+.banner {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.banner img {
+	max-width: 100%;
+	height: auto;
+}
+
+.shipping-info {
+	margin-top: 20px;
+	text-align: center;
+	background-color: #f9f9f9;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.shipping-info img {
+	max-width: 100px;
+	height: auto;
+	margin-bottom: 10px;
+}
+
+.shipping-info p {
+	margin: 5px 0;
+	color: #333;
+}
+
+.product-details-content .tab-content {
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	margin-top: 10px;
+}
+
+.product-details-content .tab-content h2 {
+	color: #333;
+	font-size: 24px;
+	margin-bottom: 15px;
+}
+
+.product-details-content .tab-content p {
+	color: #666;
+	line-height: 1.6;
+}
+
+.product-details-content .tab-content ul {
+	list-style-type: disc;
+	margin-left: 20px;
+}
+
+.product-details-content .tab-content li {
+	color: #666;
+}
+
+a.home > div {
+	display: inline-block;
+	height: 27px;
+	width: 14px;
+	background: url('../img/home.png') no-repeat;
+	background-size: 12px 14px;
+	background-position: 0px 5px;
+	text-align: left;
+	text-indent: -9999px;
+}
+
+.top {
+	text-align: right;
+}
+.buy-con {
+	width: 80%;
+	margin: 0 auto;
+	background-color: #fff;
+	padding: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.buy-con h1 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.order-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+}
+
+.order-table th,
+.order-table td {
+	border: 1px solid #ddd;
+	padding: 8px;
+	text-align: center;
+}
+
+.order-table th {
+	background-color: #f2f2f2;
+}
+
+.order-table img {
+	width: 100px;
+}
+
+.delivery-info {
+	padding: 100px;
+	margin-top: 20px;
+}
+
+.delivery-info h2 {
+	margin-bottom: 10px;
+}
+
+.delivery-info form {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.delivery-info label {
+	margin-top: 20px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.delivery-info input,
+.delivery-info select,
+.delivery-info textarea,
+.delivery-info button {
+	width: calc(50% - 10px);
+	margin-bottom: 10px;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.delivery-info input[type='text'],
+.delivery-info input[type='email'],
+.delivery-info select,
+.delivery-info textarea {
+	width: calc(50% - 10px);
+}
+
+.delivery-info input[type='text']:nth-child(2),
+.delivery-info input[type='email']:nth-child(2),
+.delivery-info select:nth-child(2),
+.delivery-info textarea:nth-child(2) {
+	margin-left: 10px;
+}
+
+.delivery-info button {
+	width: auto;
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	padding: 10px 20px;
+}
+
+.delivery-info button:hover {
+	background-color: #0056b3;
+}
+/* 직접입력 표시*/
+#customMessage {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.phone-input {
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+.phone-input select,
+.phone-input input {
+	width: auto;
+	flex: 1;
+	margin: 0 5px;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.phone-input span {
+	margin: 0 5px;
+}
+
+.payment {
+	width: 100%;
+	margin-top: 20px;
+}
+
+.payment h2 {
+	margin-bottom: 10px;
+}
+
+.payment label {
+	display: block;
+	margin-bottom: 10px;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.payment input[type='radio'] {
+	margin-right: 10px;
+}
+
+.total {
+	width: 100%;
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.total-amount {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+.member-mody {
+	width: 100%;
+	max-width: 600px;
+	background: white;
+	padding: 40px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+	border-radius: 12px;
+	box-sizing: border-box;
+	margin: 20px 0; /* 위아래 여백 추가 */
+}
+
+.member-mody h1 {
+	font-size: 24px;
+	font-weight: 700;
+	color: #333;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+label {
+	font-weight: 700;
+	color: #333;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='email'],
+select {
+	width: 100%;
+	padding: 12px 15px;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	font-size: 16px;
+	background-color: #fff;
+	transition: border-color 0.3s ease-in-out;
+	box-sizing: border-box;
+}
+
+input[type='text']:focus,
+input[type='password']:focus,
+input[type='email']:focus,
+select:focus {
+	border-color: #007bff;
+}
+
+input::placeholder {
+	color: #bbb;
+}
+
+.address-group,
+.phone-group {
+	display: flex;
+	gap: 10px;
+}
+
+.phone-group select,
+.phone-group input {
+	flex: 1;
+}
+.address-group input {
+	width: 100px;
+}
+
+.address-group button,
+.phone-group button {
+	padding: 12px 15px;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	background-color: #9a6235;
+	color: white;
+	cursor: pointer;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.address-group button:hover,
+.phone-group button:hover {
+	background-color: #763b00;
+}
+
+.out-btn {
+	right: 3px;
+	position: absolute;
+	color: #c7c7c7;
+}
+.out-btn:hover {
+	color: #ff0000;
+}
+.member {
+	width: 100%;
+	max-width: 600px;
+	background: white;
+	padding: 40px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+	border-radius: 12px;
+	box-sizing: border-box;
+	margin: 20px 0; /* 위아래 여백 추가 */
+}
+
+.member h1 {
+	font-size: 24px;
+	font-weight: 700;
+	color: #333;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+label {
+	font-weight: 700;
+	color: #333;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='email'],
+select {
+	width: 100%;
+	padding: 12px 15px;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	font-size: 16px;
+	background-color: #fff;
+	transition: border-color 0.3s ease-in-out;
+	box-sizing: border-box;
+}
+
+input[type='text']:focus,
+input[type='password']:focus,
+input[type='email']:focus,
+select:focus {
+	border-color: #007bff;
+}
+
+input::placeholder {
+	color: #bbb;
+}
+
+.address-group,
+.phone-group {
+	display: flex;
+	gap: 10px;
+}
+
+.phone-group select,
+.phone-group input {
+	flex: 1;
+}
+.address-group input {
+	width: 100px;
+}
+
+.address-group button,
+.phone-group button {
+	padding: 12px 15px;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	background-color: #9a6235;
+	color: white;
+	cursor: pointer;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.address-group button:hover,
+.phone-group button:hover {
+	background-color: #763b00;
+}
+
+.out-btn {
+	right: 3px;
+	position: absolute;
+	color: #c7c7c7;
+}
+.out-btn:hover {
+	color: #ff0000;
+}
