@@ -772,12 +772,3 @@ input::placeholder {
 .phone-group button:hover {
 	background-color: #763b00;
 }
-
-.out-btn {
-	right: 3px;
-	position: absolute;
-	color: #c7c7c7;
-}
-.out-btn:hover {
-	color: #ff0000;
-}
