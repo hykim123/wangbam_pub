@@ -9,35 +9,25 @@
 </head>
 
 <body>
-    <header>
-        <h2>공지사항 수정</h2>
-    </header>
-
-    <div id="wrab">
-        <form action="" method="post">
-            <table class="table2">
-                <tbody>
-                    <tr>
-                        <th>제목 : </th>
-                        <td><input type="text" name="title" value="기존제목" /></td>
-                    </tr>
-                    <tr>
-                        <th>작성자 : </th>
-                        <td><input type="text" name="writer" value="작성자이름" disabled /></td>
-                    </tr>
-                    <tr>
-                        <th>내용 : </th>
-                        <td><textarea id="content" name="content">기존내용</textarea></td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <div class="btn_div">
-                <button type="button" class="btn submit" onclick="">저장</button>
-                <button type="button" class="btn cancel" onclick="">취소</button>
-            </div>
-        </form>
-    </div>
+    <form class="form-group">
+        <h1>공지사항 수정</h1>
+        <div>
+            <label for="username">제목</label>
+            <input type="text" id="username" placeholder="현재 아이디 (이메일)">
+        </div>
+        <div>
+            <label for="username">작성자</label>
+            <input type="text" id="username" placeholder="현재 아이디 (이메일)">
+        </div>
+        <div>
+            <label for="username">내용</label>
+            <textarea name="" id=""></textarea>
+        </div>
+        <div class="buttons">
+            <button type="submit" class="btn submit">저장</button>
+            <button type="button" class="btn cancel">취소</button>
+        </div>
+    </form>
 </body>
 
 </html>

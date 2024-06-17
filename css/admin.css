@@ -6,7 +6,6 @@
 @import url('/css/common.css');
 
 body:has(.admin) {
-	font-family: 'Noto Sans KR', sans-serif;
 	background-color: #f7f7f7;
 	margin: 0;
 	padding: 0;
@@ -39,12 +38,6 @@ body:has(.admin) {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
-}
-
-.form-group {
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
 }
 
 .admin label {

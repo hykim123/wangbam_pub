@@ -20,10 +20,17 @@ caption {
 	text-indent: -9999px;
 	height: 0;
 }
+/* 테이블위 검색영역 */
+.search-group {
+	display: flex;
+	gap: 32px;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
 .search-bar {
 	display: flex;
 	justify-content: flex-end;
-	margin-bottom: 20px;
 }
 
 .search-bar input {
@@ -40,7 +47,7 @@ caption {
 }
 
 .table1 {
-	width: 80%;
+	width: 100%;
 	border-collapse: collapse;
 	margin-bottom: 20px;
 	margin: 0 auto;
@@ -97,6 +104,10 @@ caption {
 	border: 1px solid #744e33;
 	background-color: #fff;
 	color: #744e33;
+}
+.btn.edit {
+	color: #333;
+	background-color: #e2e2e2;
 }
 
 caption {

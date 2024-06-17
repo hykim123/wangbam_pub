@@ -13,6 +13,7 @@ body {
 	position: sticky;
 	top: 0;
 	z-index: 3;
+	border-bottom: 1px solid #e2e2e2;
 	background: rgba(255, 255, 255, 0.1);
 	backdrop-filter: saturate(180%) blur(15px);
 }
@@ -67,14 +68,11 @@ body {
 }
 /* 메인영역 */
 .main {
-	margin-top: 96px;
-	background-color: #eee;
+	min-height: calc(100vh - 196px);
+	background-color: #fff;
 }
 .main:has(.view) {
-	margin-top: 0;
-}
-.main:has(.login-container) {
-	background-color: #fff;
+	background-color: #eee;
 }
 .content {
 	max-width: 1260px;
@@ -86,6 +84,7 @@ body {
 }
 .inner-footer {
 	max-width: 1260px;
+	height: 98px;
 	margin: auto;
 	padding: 24px;
 }

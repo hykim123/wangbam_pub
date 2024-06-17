@@ -5,6 +5,9 @@
 .content {
 	position: relative;
 	min-height: 200px;
+	padding: 40px 0;
+}
+.content:has(.view) {
 	padding-top: 160px;
 }
 /* 빠른메뉴 */
@@ -196,7 +199,6 @@ select {
 	display: block;
 	width: 100%;
 	padding: 10px;
-	margin: 10px 0;
 	border: 1px solid #ddd;
 	border-radius: 5px;
 	box-sizing: border-box;
@@ -472,65 +474,6 @@ a.home > div {
 .order-table img {
 	width: 100px;
 }
-
-.delivery-info {
-	padding: 100px;
-	margin-top: 20px;
-}
-
-.delivery-info h2 {
-	margin-bottom: 10px;
-}
-
-.delivery-info form {
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.delivery-info label {
-	margin-top: 20px;
-	width: 100%;
-	margin-bottom: 20px;
-}
-
-.delivery-info input,
-.delivery-info select,
-.delivery-info textarea,
-.delivery-info button {
-	width: calc(50% - 10px);
-	margin-bottom: 10px;
-	padding: 10px;
-	border: 1px solid #ddd;
-	border-radius: 4px;
-	box-sizing: border-box;
-}
-
-.delivery-info input[type='text'],
-.delivery-info input[type='email'],
-.delivery-info select,
-.delivery-info textarea {
-	width: calc(50% - 10px);
-}
-
-.delivery-info input[type='text']:nth-child(2),
-.delivery-info input[type='email']:nth-child(2),
-.delivery-info select:nth-child(2),
-.delivery-info textarea:nth-child(2) {
-	margin-left: 10px;
-}
-
-.delivery-info button {
-	width: auto;
-	background-color: #007bff;
-	color: #fff;
-	border: none;
-	cursor: pointer;
-	padding: 10px 20px;
-}
-
-.delivery-info button:hover {
-	background-color: #0056b3;
-}
 /* 직접입력 표시*/
 #customMessage {
 	width: 100%;
@@ -595,30 +538,6 @@ a.home > div {
 	font-size: 1.5em;
 	font-weight: bold;
 }
-.member-mody {
-	width: 100%;
-	max-width: 600px;
-	background: white;
-	padding: 40px;
-	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-	border-radius: 12px;
-	box-sizing: border-box;
-	margin: 20px 0; /* 위아래 여백 추가 */
-}
-
-.member-mody h1 {
-	font-size: 24px;
-	font-weight: 700;
-	color: #333;
-	text-align: center;
-	margin-bottom: 30px;
-}
-
-.form-group {
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
-}
 
 label {
 	font-weight: 700;
@@ -650,39 +569,14 @@ input::placeholder {
 	color: #bbb;
 }
 
-.address-group,
-.phone-group {
-	display: flex;
-	gap: 10px;
-}
-
 .phone-group select,
 .phone-group input {
 	flex: 1;
 }
-.address-group input {
-	width: 100px;
+.out-buttons {
+	text-align: right;
 }
-
-.address-group button,
-.phone-group button {
-	padding: 12px 15px;
-	border: 1px solid #ddd;
-	border-radius: 6px;
-	background-color: #9a6235;
-	color: white;
-	cursor: pointer;
-	transition: background-color 0.3s ease-in-out;
-}
-
-.address-group button:hover,
-.phone-group button:hover {
-	background-color: #763b00;
-}
-
 .out-btn {
-	right: 3px;
-	position: absolute;
 	color: #c7c7c7;
 }
 .out-btn:hover {
@@ -706,13 +600,6 @@ input::placeholder {
 	text-align: center;
 	margin-bottom: 30px;
 }
-
-.form-group {
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
-}
-
 label {
 	font-weight: 700;
 	color: #333;
@@ -753,8 +640,8 @@ input::placeholder {
 .phone-group input {
 	flex: 1;
 }
-.address-group input {
-	width: 100px;
+.address-group button {
+	flex-shrink: 0;
 }
 
 .address-group button,
@@ -771,4 +658,8 @@ input::placeholder {
 .address-group button:hover,
 .phone-group button:hover {
 	background-color: #763b00;
+}
+
+.address-group ~ input {
+	margin-top: 8px;
 }

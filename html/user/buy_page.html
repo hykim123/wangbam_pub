@@ -26,7 +26,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><img src="path_to_image/hodu_pound.jpg" alt="[홍베이커리] 호두 파운드 이미지"></td>
+                    <td><img src="" alt="[홍베이커리] 호두 파운드 이미지"></td>
                     <td>[홍베이커리] 호두 파운드</td>
                     <td>7,500원</td>
                     <td>1</td>
@@ -43,10 +43,12 @@
         <div class="delivery-info">
             <h2>배송 정보</h2>
             <br>
-            <form>
+            <form class="form-group">
                 <label for="postcode">주소찾기</label>
-                <input type="text" id="postcode" name="postcode">
-                <button type="button">우편번호</button>
+                <div class="address-group">
+                    <input type="text" id="postcode" name="postcode">
+                    <button type="button">우편번호</button>
+                </div>
                 <input type="text" class="address-input" name="address1" placeholder="기본주소">
                 <input type="text" class="address-input2" name="address2" placeholder="나머지주소">
 
@@ -83,11 +85,11 @@
                     <p>총 결제금액</p>
                     <p class="total-amount">11,500원</p>
                 </div>
-                <button type="submit">결제하기</button>
+                <button type="button" class="final-btn">결제하기</button>
             </form>
         </div>
     </div>
-
+    <script src="/js/ui.js"></script>
 </body>
 
 </html>
