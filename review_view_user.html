@@ -32,15 +32,35 @@
                     </tr>
                     <tr>
                         <th>내용 : </th>
-                        <td><textarea id="content" name="content" disabled>문의내용</textarea></td>
+                        <td><textarea id="content" name="content" disabled>리뷰내용</textarea></td>
                     </tr>
                 </tbody>
             </table>
-            <div class="btn_div">
+
+            <form action="" method="post">
+                이름:<input type="text" name="writer" /><br />
+                내용:<textarea name="comm"></textarea><br />
+                비밀번호:<input type="password" name="password" /><br />
+
+                <input type="hidden" name="" value="">
+                <input type="hidden" name="" value="" />
+                <input type="submit" value="저장하기" />
+            </form>
+            <div> <!-- for 돌려서 댓글 목록 가져오기-->
+                이름:글쓴이 &nbsp;&nbsp;
+                날짜:날짜<br />
+                내용:댓글 내용
+                <!-- 본인이 작성한 댓글일 경우에만 삭제버튼 보이게 -->
                 <button type="button" class="btn" onclick="">삭제</button>
+            </div>
+
+            <div class="btn_div">
                 <button type="button" class="btn" onclick="">목록</button>
+                <!-- 본인이 작성한 리뷰일 경우에만 삭제버튼 보이게 -->
+                <button type="button" class="btn" onclick="">삭제</button>
             </div>
         </form>
+
     </div>
 </body>
 
