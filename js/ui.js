@@ -9,7 +9,7 @@ const animateButton = function (e) {
 	}, 700);
 };
 
-const bubblyButtons = document.getElementsByClassName('bubbly-button');
+const bubblyButtons = document.querySelectorAll('.final-btn');
 
 for (let i = 0; i < bubblyButtons.length; i++) {
 	bubblyButtons[i].addEventListener('click', animateButton, false);

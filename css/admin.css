@@ -15,9 +15,14 @@ body:has(.admin) {
 	min-height: 100vh;
 	padding: 20px; /* 추가된 여백 */
 }
+.admin-main {
+	min-height: calc(100vh - 144px);
+	background-color: #fff;
+}
 .admin {
-	width: 100%;
-	max-width: 600px;
+	width: auto;
+	min-width: 600px;
+	max-width: 800px;
 	background: white;
 	padding: 40px;
 	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -48,6 +53,7 @@ body:has(.admin) {
 .admin input[type='text'],
 .admin input[type='password'],
 .admin input[type='email'],
+.admin textarea,
 .admin select {
 	width: 100%;
 	padding: 12px 15px;
@@ -62,11 +68,13 @@ body:has(.admin) {
 .admin input[type='text']:focus,
 .admin input[type='password']:focus,
 .admin input[type='email']:focus,
+.admin textarea:focus,
 .admin select:focus {
 	border-color: #007bff;
 }
 
-.admin input::placeholder {
+.admin input::placeholder,
+.admin textarea {
 	color: #bbb;
 }
 
@@ -79,9 +87,6 @@ body:has(.admin) {
 .phone-group select,
 .phone-group input {
 	flex: 1;
-}
-.address-group input {
-	width: 100px;
 }
 
 .address-group button,
@@ -125,10 +130,27 @@ body:has(.admin) {
 .admin-btn.cancel {
 	background-color: #fff;
 	color: #333;
-	border: 1px solid #ededed;
+	border: 1px solid #e2e2e2;
 }
 
 .admin-btn.edit {
-	background-color: #ededed;
+	background-color: #e2e2e2;
 	color: #333;
+}
+
+.admin-header .global-nav {
+	width: 100%;
+	height: 44px;
+	padding: 0 1rem;
+	background-color: #e2e2e2;
+}
+.admin-header .global-nav-links {
+	display: flex;
+	align-items: center;
+	max-width: 1260px;
+	height: 100%;
+	margin: 0 auto;
+}
+.admin-header .global-nav-links {
+	justify-content: space-between;
 }

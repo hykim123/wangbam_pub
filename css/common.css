@@ -33,12 +33,27 @@ body:has(.docu) {
 	padding-left: 8px;
 	margin-bottom: 16px;
 }
-.form-group label + :is(input, select, div, textarea) {
+.form-group label + :is(input, select, div, textarea),
+.form-group input + :is(input, div),
+.form-group div > div + :is(div, input) {
 	margin-top: 8px;
 }
+
 .form-group > div + div {
 	margin-top: 24px;
 }
 .form-group .buttons {
 	text-align: center;
+}
+.address-group button {
+	flex-shrink: 0;
+}
+.address-group input + input,
+.phone-group input + input {
+	margin-top: 0;
+}
+.comment {
+	border-radius: 12px;
+	border: 1px solid #e2e2e2;
+	padding: 24px;
 }
