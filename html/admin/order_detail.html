@@ -9,51 +9,49 @@
 </head>
 
 <body>
-  <div class="title">
-    <h3>주문 상세조회</h3>
-  </div>
-  <table class="table3">
-    <tr>
-      <td>
-        <label>주문번호:</label>
-        <input type="text" />
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <label>주문일시:</label>
-        <input type="text" />
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <label>받는사람:</label>
-        <input type="text" />
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <label>배송상태:</label>
-        <input type="text" />
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <label>운송장번호:</label>
-        <input type="text" />
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <label>배송지:</label>
-        <input type="text" />
-      </td>
-    </tr>
-  </table>
-  <div class="btn_div">
-    <button type="button" class="admin-btn submit">발송</button>
-    <button type="button" class="admin-btn cancel">주문취소</button>
-  </div>
+  <div class="admin">
+    <h1>주문 상세조회</h1>
+<form action="" method="post">
+    <div class="form-group">
+        <label type="text">주문번호:</label>
+        <input type="text" name="order-number" placeholder="주문번호" />
+    </div>
+    <div class="form-group">
+        <label type="text">주문일시:</label>
+        <input type="text" name="order-date" placeholder="주문일시" />
+    </div>
+    <div class="form-group">
+        <label type="text">받는사람:</label>
+        <input type="text" name="receiver" placeholder="받는사람"/>
+    </div>
+    <div class="form-group">
+        <label type="text">배송상태:</label>
+        <label type="text" name="delivery-status"></label>
+        
+        
+    </div>
+    <div class="form-group">
+        <label type="text">운송장번호:</label>
+        <input type="text" name="receiver" placeholder="받는사람"/>
+    </div>
+    <div class="form-group">
+        <label type="text">배송지:</label>
+        <input type="text" name="receiver" placeholder="받는사람"/>
+        <div class="address-group">
+          <input type="text" id="postcode" placeholder="우편번호">
+          <button type="button" class="admin-btn submit">검색</button>
+      </div>
+      <input type="text" placeholder="기본주소">
+      <input type="text" placeholder="상세주소">
+    </div>
+        
+    <div class="btn_div">
+        <button type="button" class="admin-btn cancel" onclick="">취소</button>
+        <button type="button" class="admin-btn submit" onclick="">저장</button>
+    </div>
+</form>
+</div>
+ 
 </body>
 
 </html>
