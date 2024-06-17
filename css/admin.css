@@ -3,6 +3,7 @@
 @import url('/css/reset.css');
 @import url('/css/layout.css');
 @import url('/css/component.css');
+@import url('/css/common.css');
 
 body:has(.admin) {
 	font-family: 'Noto Sans KR', sans-serif;
@@ -15,7 +16,6 @@ body:has(.admin) {
 	min-height: 100vh;
 	padding: 20px; /* 추가된 여백 */
 }
-
 .admin {
 	width: 100%;
 	max-width: 600px;
